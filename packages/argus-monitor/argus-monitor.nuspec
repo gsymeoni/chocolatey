@@ -43,8 +43,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://github.com/gsymeoni/chocolatey/blob/master/packages/argus-monitor/argus-monitor.png</iconUrl>
     <copyright>2022 Software Vendor</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <licenseUrl>https://help.argusmonitor.com/Licenseagreement.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
     <docsUrl>https://help.argusmonitor.com/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
