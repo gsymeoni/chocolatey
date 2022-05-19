@@ -7,3 +7,13 @@
 # NOTE: For upgrades - like the uninstall script, this script always runs from 
 #  the currently installed version, not from the new upgraded package version.
 
+$process = Get-Process "ArgusMonitor" -ea 0
+
+if ($process) {
+  $runningFile = "$env:TEMP\am.running"
+  $processPath = $process | Where-Object { $_.Path } | Select-Object -First 1 -ExpandProperty Path
+  Set-Content -Value "$processPath" -Path $runningFile
+
+  Write-Host "Found Running instance of Argus Monitor. Stopping processes..."
+  $process | Stop-Process
+}
